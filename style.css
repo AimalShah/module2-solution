@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Open+Sans:ital@1&family=Poppins:wght@200&family=Source+Code+Pro&family=Source+Serif+Pro&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+
+.heading {
+    text-align: center;
+    margin: 60px 0 0 30px;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.head-1 {
+    background-color: #D59898;
+}
+
+.head-2 {
+    background-color: #C14543;
+}
+
+.head-3 {
+    background-color: #E5D198;
+}
+
+
+@media (min-width:992px) {
+
+    .wrapper {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 20px;
+        margin: 100px 50px;
+    }
+
+    .item {
+        border: 1px solid black;
+        background-color: #999999;
+
+    }
+
+    .head {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+
+        margin-left: 300px;
+        border: 2px solid black;
+        padding: 4px;
+
+    }
+
+    p {
+        padding: 12px;
+        font-size: 20px;
+        font-weight: 300;
+
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .wrapper {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        margin: 100px 50px;
+    }
+
+    .item {
+        border: 1px solid black;
+        background-color: #999999;
+
+    }
+
+    .item-3 {
+        grid-column: 1/ span 2;
+    }
+
+    .head {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+
+        margin-left: 300px;
+        border: 2px solid black;
+        padding: 4px;
+
+    }
+
+    p {
+        padding: 12px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width:767px) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        margin: 100px 60px;
+    }
+
+    .item {
+        border: 1px solid black;
+        background-color: #999999;
+
+    }
+
+    /* .item-3{
+        grid-column:  1/ span 2;
+    } */
+    .head {
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+
+        margin-left: 300px;
+        border: 2px solid black;
+        padding: 4px;
+
+    }
+
+    p {
+        padding: 12px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
